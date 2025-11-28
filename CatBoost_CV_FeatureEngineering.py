@@ -9,7 +9,7 @@ from google.colab import files
 import warnings
 warnings.filterwarnings("ignore")
 
-print("📤 Upload train.csv, test.csv and sample_submission.csv")
+print(" Upload train.csv, test.csv and sample_submission.csv")
 uploaded = files.upload()
 
 train_key = [k for k in uploaded.keys() if "train" in k.lower()][0]
@@ -185,7 +185,7 @@ skf = StratifiedKFold(n_splits=N_FOLDS, shuffle=True, random_state=SEED)
 test_probs_sum = np.zeros((X_test.shape[0], 3))
 f1_scores = []
 
-print("\n🔥 Starting CatBoost K-Fold...")
+print("\n Starting CatBoost K-Fold...")
 
 for fold, (tr, va) in enumerate(skf.split(X, y)):
     print(f"\n===== Fold {fold+1}/{N_FOLDS} =====")

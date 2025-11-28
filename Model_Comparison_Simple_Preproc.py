@@ -28,7 +28,7 @@ from xgboost import XGBClassifier
 # -----------------------------
 # 1) Upload files
 # -----------------------------
-print("📤 Upload train.csv, test.csv, sample_submission.csv")
+print(" Upload train.csv, test.csv, sample_submission.csv")
 uploaded = files.upload()
 
 def find_key(uploaded_dict, pattern):
@@ -214,4 +214,4 @@ for name, model in models.items():
     # Trigger download in Colab
     colab_files.download(out_name)
 
-print("\n✅ Done! You now have separate submission CSVs for each model.")
+print("\n Done! You now have separate submission CSVs for each model.")

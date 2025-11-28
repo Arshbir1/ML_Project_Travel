@@ -40,7 +40,7 @@ from lightgbm import LGBMClassifier
 # 1) FILE UPLOAD
 # ============================================================
 
-print("📤 Upload train.csv, test.csv, sample_submission.csv")
+print(" Upload train.csv, test.csv, sample_submission.csv")
 uploaded = files.upload()
 
 def pick_file(keyword):
@@ -222,4 +222,4 @@ for name, model in models.items():
 
     colab_files.download(out_name)
 
-print("\n🎉 DONE — all advanced model submissions generated!")
+print("\n DONE — all advanced model submissions generated!")
